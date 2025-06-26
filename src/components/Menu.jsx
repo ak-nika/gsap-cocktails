@@ -11,7 +11,7 @@ const Menu = () => {
   useGSAP(() => {
     gsap.fromTo("#title", { opacity: 0 }, { opacity: 1, duration: 1 });
     gsap.fromTo(
-      ".cocktail-img",
+      ".special",
       { opacity: 0, xPercent: -100 },
       { opacity: 1, xPercent: 0, duration: 1, ease: "power1.inOut" }
     );
@@ -106,7 +106,7 @@ const Menu = () => {
           <img
             src={currentCocktail.image}
             alt={currentCocktail.name}
-            className="object-contain cocktail-img"
+            className="object-contain cocktail-img special"
           />
         </div>
 
